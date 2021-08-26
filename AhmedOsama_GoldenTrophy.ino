@@ -13,6 +13,7 @@ void setup()
   //taking password for the first time
   while (!Serial.available()){}
   password = Serial.readString();
+  cesar(&password);
   
   //led setup
   pinMode(led, OUTPUT);
